@@ -6,49 +6,49 @@ import UserIcon from "../../icons/UserIcon";
 const Header = () => {
     return (
         <header 
-            class="
+            className="
                 showHeader top-0 fixed w-full transition-transform 
                 ease-in-out duration-300 shadow-md z-1000
             "
         >
-            <div class="bg-[#ffffff] flex items-center shadow-md ">
-                <div class="max-w-[1290px] mx-auto flex items-center justify-between w-full h-full ">
+            <div className="bg-[#ffffff] flex items-center shadow-md ">
+                <div className="max-w-[1290px] mx-auto flex items-center justify-between w-full h-full ">
                     {/* <!-- Logo --> */}
-                        <a href="/index.html" class="leading-20px ">
-                            <div class="flex items-center gap-1 ">
-                                <img src="./images/logo.png" alt="EduPress Logo" class="w-40px h-[30px]" />
-                                <p class="font-[Exo] font-bold text-[28px]">EduPress</p>
+                        <a href="/index.html" className="leading-20px ">
+                            <div className="flex items-center gap-1 ">
+                                <img src="./images/logo.png" alt="EduPress Logo" className="w-40px h-[30px]" />
+                                <p className="font-[Exo] font-bold text-[28px]">EduPress</p>
                             </div>
-                            <div class="flex justify-center items-center translate-y-[3px]"><div class="w-[60px] h-1px bg-[#EAEAEA] border-0"></div></div>
-                            <p class="text-[12px] font-semibold text-center">Nền tảng học trực tuyến</p>
+                            <div className="flex justify-center items-center translate-y-[3px]"><div className="w-[60px] h-1px bg-[#EAEAEA] border-0"></div></div>
+                            <p className="text-[12px] font-semibold text-center">Nền tảng học trực tuyến</p>
                         </a>
                     {/* <!-- Menu --> */}
                         <nav>
-                            <ul class="flex overflow-visible">
-                                <li class="text-[#000000] p-[25px] hover:bg-[#F5F5F5] hover:text-[#FF782D]">
-                                    <a class="text-[16px] font-semibold" href="/index.html">Trang chủ</a>
+                            <ul className="flex overflow-visible">
+                                <li className="text-[#000000] p-[25px] hover:bg-[#F5F5F5] hover:text-[#FF782D]">
+                                    <a className="text-[16px] font-semibold" href="/index.html">Trang chủ</a>
                                 </li>
-                                <li class="relative group cursor-pointer overflow-visible">
+                                <li className="relative group cursor-pointer overflow-visible">
                                     <a
                                         href="#"
-                                        class="flex items-center text-[16px] font-semibold gap-2 p-[25px] group-hover:bg-[#F5F5F5] group-hover:text-[#FF782D]"
+                                        className="flex items-center text-[16px] font-semibold gap-2 p-[25px] group-hover:bg-[#F5F5F5] group-hover:text-[#FF782D]"
                                     >
                                         Khóa học
                                         <i
-                                        class="fa-solid fa-chevron-down transform transition-transform duration-300 ease-in-out group-hover:rotate-180"
+                                        className="fa-solid fa-chevron-down transform transition-transform duration-300 ease-in-out group-hover:rotate-180"
                                         ></i>
                                     </a>
 
                                     {/* <!-- Submenu --> */}
                                         <div 
-                                            class="
+                                            className="
                                                 absolute h-[5px] left-0 top-[100%] w-[300px] opacity-0
                                                 group-hover:opacity-100 z-[49] shadow-xl 
                                             "
                                         >
                                         </div>
                                         <div
-                                            class="absolute left-0 top-[100%] translate-y-[5px] w-[300px] bg-[#ffffff] shadow-md rounded-md h-[380px]
+                                            className="absolute left-0 top-[100%] translate-y-[5px] w-[300px] bg-[#ffffff] shadow-md rounded-md h-[380px]
                                                     opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto overflow-y-auto
                                                     transition-all duration-300 z-50 scale-0 group-hover:scale-100 overflow-hidden boder border-[2px] border-[#EAEAEA]
                                                 "
@@ -60,85 +60,85 @@ const Header = () => {
                                             </ul>
                                         </div>
                                 </li>
-                                <li class="text-[#000000] p-[25px] hover:bg-[#F5F5F5] hover:text-[#FF782D]">
-                                    <a class="text-[16px] font-semibold" href="#">Bài viết</a>
+                                <li className="text-[#000000] p-[25px] hover:bg-[#F5F5F5] hover:text-[#FF782D]">
+                                    <a className="text-[16px] font-semibold" href="#">Bài viết</a>
                                 </li>
-                                <li class="text-[#000000] p-[25px] hover:bg-[#F5F5F5] hover:text-[#FF782D]">
-                                    <a class="text-[16px] font-semibold" href="#">Về EduPress</a>
+                                <li className="text-[#000000] p-[25px] hover:bg-[#F5F5F5] hover:text-[#FF782D]">
+                                    <a className="text-[16px] font-semibold" href="#">Về EduPress</a>
                                 </li>
-                                <li class="text-[#000000] p-[25px] hover:bg-[#F5F5F5] hover:text-[#FF782D]">
-                                    <a class="text-[16px] font-semibold" href="#">Liên hệ</a>
+                                <li className="text-[#000000] p-[25px] hover:bg-[#F5F5F5] hover:text-[#FF782D]">
+                                    <a className="text-[16px] font-semibold" href="#">Liên hệ</a>
                                 </li>
                             </ul>
                         </nav>
                     {/* <!-- Cart & Account --> */}
-                        <div class="flex items-center gap-[25px]">
-                            <ul class="flex items-center overflow-visible leading-[30px]">
-                                <li class="text-[#000000] text-[18px] py-[25px] px-[15px] hover:text-[#FF782D] hover:bg-[#F5F5F5] cursor-pointer">
+                        <div className="flex items-center gap-[25px]">
+                            <ul className="flex items-center overflow-visible leading-[30px]">
+                                <li className="text-[#000000] text-[18px] py-[25px] px-[15px] hover:text-[#FF782D] hover:bg-[#F5F5F5] cursor-pointer">
                                     <SearchIcon size={24}/>  
                                 </li>
-                                <li class="text-[#000000] text-[18px] py-[25px] px-[15px] hover:text-[#FF782D] hover:bg-[#F5F5F5] cursor-pointer">
+                                <li className="text-[#000000] text-[18px] py-[25px] px-[15px] hover:text-[#FF782D] hover:bg-[#F5F5F5] cursor-pointer">
                                     <BellIcon size={24}/>
                                 </li>
-                                <li class="relative group overflow-visible">
+                                <li className="relative group overflow-visible">
                                     {/* <!-- Nút giỏ hàng --> */}
                                         <a
                                             href="#"
-                                            class="flex items-center text-[18px] font-semibold gap-2 px-[15px] py-[25px] 
+                                            className="flex items-center text-[18px] font-semibold gap-2 px-[15px] py-[25px] 
                                                 group-hover:bg-[#F5F5F5] group-hover:text-[#FF782D] relative z-1" 
                                         >
                                             <BagShoppingIcon size={24} />
-                                            <span class="absolute top-[20px] right-[10px] w-[15px] h-[15px] text-[10px] text-white bg-red-500 rounded-full z-2 flex justify-center items-center">0</span>
+                                            <span className="absolute top-[20px] right-[10px] w-[15px] h-[15px] text-[10px] text-white bg-red-500 rounded-full z-2 flex justify-center items-center">0</span>
                                         </a>
                                         <div 
-                                            class="absolute h-[10px] right-0 top-full w-[300px] 
+                                            className="absolute h-[10px] right-0 top-full w-[300px] 
                                                 z-[49] opacity-0 pointer-events-auto"
                                         ></div>
                                         {/* <!-- Box hiển thị giỏ hàng --> */}
                                             <div
-                                                class="absolute right-0 top-full translate-y-[8px] w-[300px] bg-white shadow-md rounded-md
+                                                className="absolute right-0 top-full translate-y-[8px] w-[300px] bg-white shadow-md rounded-md
                                                     opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto 
                                                     py-[5px] transition-all duration-200 z-50 scale-95 group-hover:scale-100 
                                                     overflow-hidden border border-[#EAEAEA]"
                                             >
                                                 <div>
                                                     {/* <!-- Box Course --> */}
-                                                        <div class="showCart">
-                                                            <div class="px-[10px]">
-                                                                <div class="flex items-center">
-                                                                    <div class="w-[25%]">
+                                                        <div className="showCart">
+                                                            <div className="px-[10px]">
+                                                                <div className="flex items-center">
+                                                                    <div className="w-[25%]">
                                                                         <img 
                                                                             src="https://v2.fullbootcamp.com/uploads/0f57a59b2dcc410385e6b40d922e9bb1_c0165976ca.webp" 
                                                                             alt="" 
-                                                                            class="w-[60px] h-[60px] object-cover rounded-[10px] my-[10px]"
+                                                                            className="w-[60px] h-[60px] object-cover rounded-[10px] my-[10px]"
                                                                         />
                                                                     </div>
-                                                                    <div class="w-[75%]">
+                                                                    <div className="w-[75%]">
                                                                         <a 
                                                                             href="#"
-                                                                            class="text-[16px] font-semibold text-black line-clamp-1 
+                                                                            className="text-[16px] font-semibold text-black line-clamp-1 
                                                                                 transition-all duration-300 hover:text-[#FF782D]"
                                                                         >
                                                                             Fullstack PHP & Laravel
                                                                         </a>
-                                                                        <p class="text-[14px] text-[#555555] line-clamp-2">
+                                                                        <p className="text-[14px] text-[#555555] line-clamp-2">
                                                                             Chuyển đổi tuần luyện tập với Fullstack PHP & Laravel
                                                                         </p>
                                                                     </div>
                                                                 </div>
-                                                                <div class="h-[0.5px] bg-black/20"></div>
+                                                                <div className="h-[0.5px] bg-black/20"></div>
                                                             </div>
                                                         </div>
                                                     {/* <!-- Total Price Course --> */}
-                                                    <div class="px-[20px] py-[10px]">
-                                                        <p class="text-[20px] font-semibold text-center">
+                                                    <div className="px-[20px] py-[10px]">
+                                                        <p className="text-[20px] font-semibold text-center">
                                                             Tổng: 
-                                                            <span class="text-[#FF782D] text-[20px] font-semibold">200.000 đ</span> 
-                                                            <del class="text-gray-400 text-[16px] font-normal">200.000 đ</del>
+                                                            <span className="text-[#FF782D] text-[20px] font-semibold">200.000 đ</span> 
+                                                            <del className="text-gray-400 text-[16px] font-normal">200.000 đ</del>
                                                         </p>
-                                                        <p class="text-[14px] text-[#555555] text-center">2 Khóa học</p>
+                                                        <p className="text-[14px] text-[#555555] text-center">2 Khóa học</p>
                                                         <button 
-                                                            class="bg-[#FF782D] text-[16px] font-semibold text-white cursor-pointer w-full h-[48px] 
+                                                            className="bg-[#FF782D] text-[16px] font-semibold text-white cursor-pointer w-full h-[48px] 
                                                                 rounded-[10px] mt-[10px] hover:bg-[#FF782D]/70"
                                                         >
                                                             Chuyển đến giỏ hàng 
@@ -148,10 +148,10 @@ const Header = () => {
                                             </div>
                                 </li>
 
-                                <li class="relative group cursor-pointer overflow-visible">
+                                <li className="relative group cursor-pointer overflow-visible">
                                     <div
                                         id="avatar"
-                                        class="flex items-center text-[16px] font-semibold gap-2 px-[15px] py-[25px] group-hover:bg-[#F5F5F5] group-hover:text-[#FF782D] "
+                                        className="flex items-center text-[16px] font-semibold gap-2 px-[15px] py-[25px] group-hover:bg-[#F5F5F5] group-hover:text-[#FF782D] "
                                     >
                                         <UserIcon size={24} />
                                         
@@ -159,7 +159,7 @@ const Header = () => {
 
                                     {/* <!-- Submenu User --> */}
                                         <div 
-                                            class="
+                                            className="
                                                 absolute h-[5px] right-0 top-[100%] w-[200px] opacity-0
                                                 group-hover:opacity-100 z-[49] shadow-xl
                                             "
@@ -167,7 +167,7 @@ const Header = () => {
                                         </div>
                                         <ul
                                             id="userMenu"
-                                            class="absolute right-0 top-[100%] translate-y-[5px] w-[250px] bg-[#ffffff] shadow-md rounded-md
+                                            className="absolute right-0 top-[100%] translate-y-[5px] w-[250px] bg-[#ffffff] shadow-md rounded-md
                                                     opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto overflow-hidden
                                                     transition-all duration-300 z-50 scale-0 group-hover:scale-100 overflow-hidden boder border-[2px] border-[#EAEAEA]
                                                 "
