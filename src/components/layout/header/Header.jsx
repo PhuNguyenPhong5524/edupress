@@ -169,7 +169,7 @@ const Header = () => {
                                             id="userMenu"
                                             className="absolute right-0 top-[100%] translate-y-[5px] w-[250px] bg-[#ffffff] shadow-md rounded-md
                                                     opacity-0 pointer-events-none group-hover:opacity-100 group-hover:pointer-events-auto overflow-hidden
-                                                    transition-all duration-300 z-50 scale-0 group-hover:scale-100 overflow-hidden boder border-[2px] border-[#EAEAEA]
+                                                    transition-all duration-300 z-50 scale-0 group-hover:scale-100 boder border-[2px] border-[#EAEAEA]
                                                 "
                                         >
                                           
