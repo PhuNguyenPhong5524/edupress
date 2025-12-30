@@ -16,8 +16,8 @@ const Header = () => {
                     {/* <!-- Logo --> */}
                         <a href="/index.html" className="leading-20px ">
                             <div className="flex items-center gap-1 ">
-                                <img src="./images/logo.png" alt="EduPress Logo" className="w-40px h-[30px]" />
-                                <p className="font-[Exo] font-bold text-[28px]">EduPress</p>
+                                <img src="./images/logo.png" alt="EduPress Logo" className="w-[40px] h-[30px]" />
+                                <p className=" font-bold text-[28px]">EduPress</p>
                             </div>
                             <div className="flex justify-center items-center translate-y-[3px]"><div className="w-[60px] h-1px bg-[#EAEAEA] border-0"></div></div>
                             <p className="text-[12px] font-semibold text-center">Nền tảng học trực tuyến</p>

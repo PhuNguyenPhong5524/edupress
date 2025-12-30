@@ -11,7 +11,7 @@ const Footer = () => {
                     <div className="w-[30%]">
                         <a href="/" className="flex items-center gap-1 ">
                             <img src="./images/logo.png" alt="EduPress Logo" className="w-[40px] h-[30px]" />
-                            <p className="font-[Exo] font-bold text-[28px]">EduPress</p>
+                            <p className=" font-bold text-[28px]">EduPress</p>
                         </a>
                         <p className="mt-[20px] font-regular text-[16px] text-[#555555] text-justify">
                             EduPress kết nối học viên với chuyên gia uy tín, cung cấp các khóa học chất lượng cao về công nghệ, 
