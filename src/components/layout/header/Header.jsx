@@ -219,7 +219,23 @@ const Header = () => {
                                                     transition-all duration-300 z-50 scale-0 group-hover:scale-100 boder border-[2px] border-[#EAEAEA]
                                                 "
                                         >
-                                          
+                                            <li class="
+                                                text-black px-3 py-2 border-l-2 border-l-[#ffffff] cursor-pointer
+                                                transition-all duration-300 ease-in-out
+                                                hover:border-[#FFAC2D] hover:bg-white hover:text-[#FF782D] hover:pl-5
+                                                text-[16px] font-semibold whitespace-nowrap overflow-hidden
+                                            ">
+                                                <a href="#">Đăng nhập</a>
+                                            </li>
+
+                                            <li class="
+                                                text-black px-3 py-2 border-l-2 border-l-[#ffffff] cursor-pointer
+                                                transition-all duration-300 ease-in-out
+                                                hover:border-[#FFAC2D] hover:bg-white hover:text-[#FF782D] hover:pl-5
+                                                text-[16px] font-semibold whitespace-nowrap overflow-hidden
+                                            ">
+                                                <a href="#">Đăng ký</a>
+                                            </li>
                                         </ul>
                                 </li>
                             </ul>
