@@ -1,5 +1,6 @@
 import BagShoppingIcon from "../../icons/BagShoppingIcon";
 import BellIcon from "../../icons/BellIcon";
+import ChevronDown from "../../icons/ChevronDown";
 import SearchIcon from "../../icons/SearchIcon";
 import UserIcon from "../../icons/UserIcon";
 
@@ -34,9 +35,12 @@ const Header = () => {
                                         className="flex items-center text-[16px] font-semibold gap-2 p-[25px] group-hover:bg-[#F5F5F5] group-hover:text-[#FF782D]"
                                     >
                                         Khóa học
-                                        <i
-                                        className="fa-solid fa-chevron-down transform transition-transform duration-300 ease-in-out group-hover:rotate-180"
-                                        ></i>
+                                        <ChevronDown 
+                                            size={24} 
+                                            className="
+                                                transform transition-transform duration-300 ease-in-out group-hover:rotate-180
+                                            " 
+                                        />
                                     </a>
 
                                     {/* <!-- Submenu --> */}
@@ -56,7 +60,50 @@ const Header = () => {
                                             <ul 
                                                 id="showCategory"
                                             >
-                                                
+                                                <li 
+                                                    class="
+                                                        group text-black px-[20px] py-[10px] cursor-pointer transform transition-all ease-in-out 
+                                                        duration-300 border-[2px] border-[#ffffff] hover:border-l-[2px] hover:border-l-[#FF782D]
+                                                        hover:bg-[#ffffff] hover:text-[#FF782D] hover:pl-[30px]
+                                                    "
+                                                >
+                                                    <a class="text-[16px] font-semibold" href="#">
+                                                        Phát triển web
+                                                    </a>
+                                                </li>
+                                                <li 
+                                                    class="
+                                                        group text-black px-[20px] py-[10px] cursor-pointer transform transition-all ease-in-out 
+                                                        duration-300 border-[2px] border-[#ffffff] hover:border-l-[2px] hover:border-l-[#FF782D]
+                                                        hover:bg-[#ffffff] hover:text-[#FF782D] hover:pl-[30px]
+                                                    "
+                                                >
+                                                    <a class="text-[16px] font-semibold" href="#">
+                                                        Khoa học dữ liệu
+                                                    </a>
+                                                </li>
+                                                <li 
+                                                    class="
+                                                        group text-black px-[20px] py-[10px] cursor-pointer transform transition-all ease-in-out 
+                                                        duration-300 border-[2px] border-[#ffffff] hover:border-l-[2px] hover:border-l-[#FF782D]
+                                                        hover:bg-[#ffffff] hover:text-[#FF782D] hover:pl-[30px]
+                                                    "
+                                                >
+                                                    <a class="text-[16px] font-semibold" href="#">
+                                                        Ứng dụng di động
+                                                    </a>
+                                                </li>
+                                                <li 
+                                                    class="
+                                                        group text-black px-[20px] py-[10px] cursor-pointer transform transition-all ease-in-out 
+                                                        duration-300 border-[2px] border-[#ffffff] hover:border-l-[2px] hover:border-l-[#FF782D]
+                                                        hover:bg-[#ffffff] hover:text-[#FF782D] hover:pl-[30px]
+                                                    "
+                                                >
+                                                    <a class="text-[16px] font-semibold" href="#">
+                                                        Ngôn ngữ lập trình
+                                                    </a>
+                                                </li>
                                             </ul>
                                         </div>
                                 </li>
