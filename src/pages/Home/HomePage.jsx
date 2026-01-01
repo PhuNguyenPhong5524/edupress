@@ -1,8 +1,12 @@
-
+import Banner from './Banner';
+import './Home.css';
 
 const HomePage = () => {
     return (
-        <div className="h-[100vh]">HomePage</div>
+        <div>
+            {/* <!-- Banner --> */}
+                <Banner />
+        </div>
     )
 }
 
