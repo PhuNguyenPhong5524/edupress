@@ -1,6 +1,8 @@
 "use client";
 
 import { categoryIconMap } from "./CateGoryIconMap";
+
+
 const BoxCateGory = ({categories}) => {
     return(
         <>
