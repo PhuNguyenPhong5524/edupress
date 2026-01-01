@@ -61,46 +61,46 @@ const Header = () => {
                                                 id="showCategory"
                                             >
                                                 <li 
-                                                    class="
+                                                    className="
                                                         group text-black px-[20px] py-[10px] cursor-pointer transform transition-all ease-in-out 
                                                         duration-300 border-[2px] border-[#ffffff] hover:border-l-[2px] hover:border-l-[#FF782D]
                                                         hover:bg-[#ffffff] hover:text-[#FF782D] hover:pl-[30px]
                                                     "
                                                 >
-                                                    <a class="text-[16px] font-semibold" href="#">
+                                                    <a className="text-[16px] font-semibold" href="#">
                                                         Phát triển web
                                                     </a>
                                                 </li>
                                                 <li 
-                                                    class="
+                                                    className="
                                                         group text-black px-[20px] py-[10px] cursor-pointer transform transition-all ease-in-out 
                                                         duration-300 border-[2px] border-[#ffffff] hover:border-l-[2px] hover:border-l-[#FF782D]
                                                         hover:bg-[#ffffff] hover:text-[#FF782D] hover:pl-[30px]
                                                     "
                                                 >
-                                                    <a class="text-[16px] font-semibold" href="#">
+                                                    <a className="text-[16px] font-semibold" href="#">
                                                         Khoa học dữ liệu
                                                     </a>
                                                 </li>
                                                 <li 
-                                                    class="
+                                                    className="
                                                         group text-black px-[20px] py-[10px] cursor-pointer transform transition-all ease-in-out 
                                                         duration-300 border-[2px] border-[#ffffff] hover:border-l-[2px] hover:border-l-[#FF782D]
                                                         hover:bg-[#ffffff] hover:text-[#FF782D] hover:pl-[30px]
                                                     "
                                                 >
-                                                    <a class="text-[16px] font-semibold" href="#">
+                                                    <a className="text-[16px] font-semibold" href="#">
                                                         Ứng dụng di động
                                                     </a>
                                                 </li>
                                                 <li 
-                                                    class="
+                                                    className="
                                                         group text-black px-[20px] py-[10px] cursor-pointer transform transition-all ease-in-out 
                                                         duration-300 border-[2px] border-[#ffffff] hover:border-l-[2px] hover:border-l-[#FF782D]
                                                         hover:bg-[#ffffff] hover:text-[#FF782D] hover:pl-[30px]
                                                     "
                                                 >
-                                                    <a class="text-[16px] font-semibold" href="#">
+                                                    <a className="text-[16px] font-semibold" href="#">
                                                         Ngôn ngữ lập trình
                                                     </a>
                                                 </li>
@@ -219,7 +219,7 @@ const Header = () => {
                                                     transition-all duration-300 z-50 scale-0 group-hover:scale-100 boder border-[2px] border-[#EAEAEA]
                                                 "
                                         >
-                                            <li class="
+                                            <li className="
                                                 text-black px-3 py-2 border-l-2 border-l-[#ffffff] cursor-pointer
                                                 transition-all duration-300 ease-in-out
                                                 hover:border-[#FFAC2D] hover:bg-white hover:text-[#FF782D] hover:pl-5
@@ -228,7 +228,7 @@ const Header = () => {
                                                 <a href="#">Đăng nhập</a>
                                             </li>
 
-                                            <li class="
+                                            <li className="
                                                 text-black px-3 py-2 border-l-2 border-l-[#ffffff] cursor-pointer
                                                 transition-all duration-300 ease-in-out
                                                 hover:border-[#FFAC2D] hover:bg-white hover:text-[#FF782D] hover:pl-5
