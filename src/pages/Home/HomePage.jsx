@@ -1,60 +1,33 @@
+'use client';
+import fetchApi from '../../api/fetchApi';
 import Banner from './Banner';
 import BoxShowCategory from './BoxShowCategory/BoxShowCategory';
 import './Home.css';
+import { useState, useEffect } from 'react';
 
-const categories =  [
-    {
-      "id": 1,
-      "cate_name": "Phát triển web",
-      "icon_key": "web",
-      "quantity": 10
-    },
-    {
-      "id": 2,
-      "cate_name": "Khoa học dữ liệu",
-      "icon_key": "data",
-      "quantity": 4
-    },
-    {
-      "id": 3,
-      "cate_name": "Ứng dụng di động",
-      "icon_key": "mobile",
-      "quantity": 4
-    },
-    {
-      "id": 4,
-      "cate_name": "Ngôn ngữ lập trình",
-      "icon_key": "language",
-      "quantity": 6
-    },
-    {
-      "id": 5,
-      "cate_name": "Phát triển trò chơi",
-      "icon_key": "game",
-      "quantity": 9
-    },
-    {
-      "id": 6,
-      "cate_name": "Thiết kế & cơ sở dữ liệu",
-      "icon_key": "designdata",
-      "quantity": 5
-    },
-    {
-      "id": 7,
-      "cate_name": "Kiểm tra phần mềm",
-      "icon_key": "softwaretest",
-      "quantity": 9
-    },
-    {
-      "id": 8,
-      "cate_name": "Kỹ thuật mềm",
-      "icon_key": "softwarearchitecture",
-      "quantity": 3
-    }
-]
+
 
 
 const HomePage = () => {
+
+    
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+      let mounted = true;
+
+      fetchApi('categories')
+        .then((cats) => {
+          if (mounted) setCategories(cats);
+        })
+        .catch((err) => {
+          console.error('Fetch categories failed:', err);
+        });
+
+      return () => { mounted = false };
+    }, []);
+
+
     return (
         <div>
             {/* <!-- Banner --> */}
