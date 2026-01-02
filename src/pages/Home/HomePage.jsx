@@ -9,7 +9,6 @@ import { useState, useEffect } from 'react';
 
 
 const HomePage = () => {
-
     
     const [categories, setCategories] = useState([]);
 

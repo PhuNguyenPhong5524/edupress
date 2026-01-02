@@ -1,10 +1,31 @@
+'use client';
+
+import { useEffect, useState } from "react";
 import BagShoppingIcon from "../../icons/BagShoppingIcon";
 import BellIcon from "../../icons/BellIcon";
 import ChevronDown from "../../icons/ChevronDown";
 import SearchIcon from "../../icons/SearchIcon";
 import UserIcon from "../../icons/UserIcon";
+import fetchApi from "../../../api/fetchApi";
 
 const Header = () => {
+
+    const [categories, setCategories] = useState([]);
+
+    useEffect(() => {
+      let mounted = true;
+
+      fetchApi('categories')
+        .then((cats) => {
+          if (mounted) setCategories(cats);
+        })
+        .catch((err) => {
+          console.error('Fetch categories failed:', err);
+        });
+
+      return () => { mounted = false };
+    }, []);
+
     return (
         <header 
             className="
@@ -60,50 +81,22 @@ const Header = () => {
                                             <ul 
                                                 id="showCategory"
                                             >
-                                                <li 
-                                                    className="
-                                                        group text-black px-[20px] py-[10px] cursor-pointer transform transition-all ease-in-out 
-                                                        duration-300 border-[2px] border-[#ffffff] hover:border-l-[2px] hover:border-l-[#FF782D]
-                                                        hover:bg-[#ffffff] hover:text-[#FF782D] hover:pl-[30px]
-                                                    "
-                                                >
-                                                    <a className="text-[16px] font-semibold" href="#">
-                                                        Phát triển web
-                                                    </a>
-                                                </li>
-                                                <li 
-                                                    className="
-                                                        group text-black px-[20px] py-[10px] cursor-pointer transform transition-all ease-in-out 
-                                                        duration-300 border-[2px] border-[#ffffff] hover:border-l-[2px] hover:border-l-[#FF782D]
-                                                        hover:bg-[#ffffff] hover:text-[#FF782D] hover:pl-[30px]
-                                                    "
-                                                >
-                                                    <a className="text-[16px] font-semibold" href="#">
-                                                        Khoa học dữ liệu
-                                                    </a>
-                                                </li>
-                                                <li 
-                                                    className="
-                                                        group text-black px-[20px] py-[10px] cursor-pointer transform transition-all ease-in-out 
-                                                        duration-300 border-[2px] border-[#ffffff] hover:border-l-[2px] hover:border-l-[#FF782D]
-                                                        hover:bg-[#ffffff] hover:text-[#FF782D] hover:pl-[30px]
-                                                    "
-                                                >
-                                                    <a className="text-[16px] font-semibold" href="#">
-                                                        Ứng dụng di động
-                                                    </a>
-                                                </li>
-                                                <li 
-                                                    className="
-                                                        group text-black px-[20px] py-[10px] cursor-pointer transform transition-all ease-in-out 
-                                                        duration-300 border-[2px] border-[#ffffff] hover:border-l-[2px] hover:border-l-[#FF782D]
-                                                        hover:bg-[#ffffff] hover:text-[#FF782D] hover:pl-[30px]
-                                                    "
-                                                >
-                                                    <a className="text-[16px] font-semibold" href="#">
-                                                        Ngôn ngữ lập trình
-                                                    </a>
-                                                </li>
+                                                {
+                                                    categories.map((item) => (
+                                                        <li 
+                                                            key={item.id}
+                                                            className="
+                                                                group text-black px-[20px] py-[10px] cursor-pointer transform transition-all ease-in-out 
+                                                                duration-300 border-[2px] border-[#ffffff] hover:border-l-[2px] hover:border-l-[#FF782D]
+                                                                hover:bg-[#ffffff] hover:text-[#FF782D] hover:pl-[30px]
+                                                            "
+                                                        >
+                                                            <a className="text-[16px] font-semibold" href="#">
+                                                                {item.cate_name}
+                                                            </a>
+                                                        </li>
+                                                    ))
+                                                }
                                             </ul>
                                         </div>
                                 </li>
