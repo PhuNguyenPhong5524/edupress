@@ -7,6 +7,7 @@ import ChevronDown from "../../icons/ChevronDown";
 import SearchIcon from "../../icons/SearchIcon";
 import UserIcon from "../../icons/UserIcon";
 import fetchApi from "../../../api/fetchApi";
+import BarsIcon from "../../icons/BarsIcon";
 
 const Header = () => {
 
@@ -31,21 +32,47 @@ const Header = () => {
             className="
                 showHeader top-0 fixed w-full transition-transform 
                 ease-in-out duration-300 shadow-md z-1000
+
             "
         >
             <div className="bg-[#ffffff] flex items-center shadow-md ">
-                <div className="max-w-[1290px] mx-auto flex items-center justify-between w-full h-full ">
+                <div 
+                    className="
+                        lg:max-w-[1290px] mx-auto flex items-center justify-between w-full h-full 
+                        px-[15px] lg:px-0
+                    "
+                >   
+                    {/* Button Mobile */}
+                        <button 
+                            className="
+                                lg:hidden  hover:text-[#FF782D]
+                            "
+                        >
+                            <BarsIcon size={24} />
+                        </button>
+                    {/* div */}
+                        <div className="w-[50px] md:w-[200px] bg-[#ffffff] lg:hidden"></div>
                     {/* <!-- Logo --> */}
-                        <a href="/index.html" className="leading-20px ">
+                        <a href="/index.html" className="md:leading-[20px] w-full flex justify-center items-center">
                             <div className="flex items-center gap-1 ">
-                                <img src="./images/logo.png" alt="EduPress Logo" className="w-[40px] h-[30px]" />
-                                <p className=" font-bold text-[28px]">EduPress</p>
+                                <img src="./images/logo.png" alt="EduPress Logo" className="md:w-[40px] md:h-[30px]" />
+                                <p 
+                                    className=" 
+                                        font-bold md:text-[24px] lg:text-[28px]
+                                    "
+                                >   
+                                    EduPress
+                                </p>
                             </div>
-                            <div className="flex justify-center items-center translate-y-[3px]"><div className="w-[60px] h-1px bg-[#EAEAEA] border-0"></div></div>
-                            <p className="text-[12px] font-semibold text-center">Nền tảng học trực tuyến</p>
+                            <div className="hidden md:flex justify-center items-center translate-y-[3px]"><div className="w-[60px] h-1px bg-[#EAEAEA] border-0"></div></div>
+                            <p className="hidden lg:block text-[12px] font-semibold text-center">Nền tảng học trực tuyến</p>
                         </a>
                     {/* <!-- Menu --> */}
-                        <nav>
+                        <nav 
+                            className="
+                                hidden lg:block
+                            "
+                        >
                             <ul className="flex overflow-visible">
                                 <li className="text-[#000000] p-[25px] hover:bg-[#F5F5F5] hover:text-[#FF782D]">
                                     <a className="text-[16px] font-semibold" href="/index.html">Trang chủ</a>
@@ -114,21 +141,26 @@ const Header = () => {
                     {/* <!-- Cart & Account --> */}
                         <div className="flex items-center gap-[25px]">
                             <ul className="flex items-center overflow-visible leading-[30px]">
-                                <li className="text-[#000000] text-[18px] py-[25px] px-[15px] hover:text-[#FF782D] hover:bg-[#F5F5F5] cursor-pointer">
+                                <li className="text-[#000000] text-[18px] px-[5px] py-[15px] md:py-[20px] md:px-[15px] hover:text-[#FF782D] hover:bg-[#F5F5F5] cursor-pointer">
                                     <SearchIcon size={24}/>  
                                 </li>
-                                <li className="text-[#000000] text-[18px] py-[25px] px-[15px] hover:text-[#FF782D] hover:bg-[#F5F5F5] cursor-pointer">
+                                <li 
+                                    className="
+                                        text-[#000000] text-[18px] px-[5px] py-[15px] md:py-[20px] md:px-[15px] hover:text-[#FF782D] 
+                                        hover:bg-[#F5F5F5] cursor-pointer hidden lg:block
+                                    "
+                                >
                                     <BellIcon size={24}/>
                                 </li>
                                 <li className="relative group overflow-visible">
                                     {/* <!-- Nút giỏ hàng --> */}
                                         <a
                                             href="#"
-                                            className="flex items-center text-[18px] font-semibold gap-2 px-[15px] py-[25px] 
+                                            className="flex items-center text-[18px] font-semibold gap-2 md:px-[15px] px-[5px] py-[15px] md:py-[20px] 
                                                 group-hover:bg-[#F5F5F5] group-hover:text-[#FF782D] relative z-1" 
                                         >
                                             <BagShoppingIcon size={24} />
-                                            <span className="absolute top-[20px] right-[10px] w-[15px] h-[15px] text-[10px] text-white bg-red-500 rounded-full z-2 flex justify-center items-center">0</span>
+                                            <span className="absolute top-[10px] right-[1px] lg:top-[20px] lg:right-[10px] w-[15px] h-[15px] text-[10px] text-white bg-red-500 rounded-full z-2 flex justify-center items-center">0</span>
                                         </a>
                                         <div 
                                             className="absolute h-[10px] right-0 top-full w-[300px] 
@@ -188,10 +220,14 @@ const Header = () => {
                                             </div>
                                 </li>
 
-                                <li className="relative group cursor-pointer overflow-visible">
+                                <li 
+                                    className="
+                                        relative group cursor-pointer overflow-visible hidden lg:block
+                                    "
+                                >
                                     <div
                                         id="avatar"
-                                        className="flex items-center text-[16px] font-semibold gap-2 px-[15px] py-[25px] group-hover:bg-[#F5F5F5] group-hover:text-[#FF782D] "
+                                        className="flex items-center text-[16px] font-semibold gap-2 md:px-[15px] px-[5px] py-[15px] md:py-[20px] group-hover:bg-[#F5F5F5] group-hover:text-[#FF782D] "
                                     >
                                         <UserIcon size={24} />
                                         
