@@ -51,9 +51,9 @@ const Header = () => {
                             <BarsIcon size={24} />
                         </button>
                     {/* div */}
-                        <div className="w-[50px] md:w-[200px] bg-[#ffffff] lg:hidden"></div>
+                        <div className="w-[50px] md:w-[180px] bg-[#ffffff] lg:hidden"></div>
                     {/* <!-- Logo --> */}
-                        <a href="/index.html" className="md:leading-[20px] w-full flex justify-center items-center">
+                        <a href="/index.html" className="md:leading-[20px] w-full flex md:w-auto md:flex-col justify-center items-center">
                             <div className="flex items-center gap-1 ">
                                 <img src="./images/logo.png" alt="EduPress Logo" className="md:w-[40px] md:h-[30px]" />
                                 <p 
