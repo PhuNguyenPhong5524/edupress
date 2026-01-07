@@ -34,21 +34,27 @@ const Footer = () => {
                                         transition-all duration-300 ease-in-out hover:text-[#FF782D] cursor-pointer
                                         hover:pl-[10px] hover:underline
                                     "
-                                >Liên hệ</li>
+                                >
+                                    <a href="#">Liên hệ</a>
+                                </li>
                                 <li 
                                     className="
                                         text-[#555555] text-[10px] md:text-[12px] lg:text-[16px] font-regular transform
                                         transition-all duration-300 ease-in-out hover:text-[#FF782D] cursor-pointer
                                         hover:pl-[10px] hover:underline
                                     "
-                                >Hỏi đáp thường gặp (FAQ)</li>
+                                >
+                                    <a href="#">Hỏi đáp thường gặp (FAQ)</a>
+                                </li>
                                 <li 
                                     className="
                                         text-[#555555] text-[10px] md:text-[12px] lg:text-[16px] font-regular transform
                                         transition-all duration-300 ease-in-out hover:text-[#FF782D] cursor-pointer
                                         hover:pl-[10px] hover:underline
                                     "
-                                >Chính sách & Điều khoản</li>
+                                >
+                                    <a href="#">Chính sách & Điều khoản</a>
+                                </li>
                             </ul>
                         </div>
                         <div className="w-full">
@@ -60,28 +66,36 @@ const Footer = () => {
                                         transition-all duration-300 ease-in-out hover:text-[#FF782D] cursor-pointer
                                         hover:pl-[10px] hover:underline
                                     "
-                                >Phát triển Web</li>
+                                >
+                                    <a href="#">Phát triển Web</a>
+                                </li>
                                 <li 
                                     className="
                                         text-[#555555] text-[10px] md:text-[12px] lg:text-[16px] font-regular transform
                                         transition-all duration-300 ease-in-out hover:text-[#FF782D] cursor-pointer
                                         hover:pl-[10px] hover:underline
                                     "
-                                >Khoa học Dữ liệu</li>
+                                >
+                                    <a href="#">Khoa học Dữ liệu</a>
+                                </li>
                                 <li 
                                     className="
                                         text-[#555555] text-[10px] md:text-[12px] lg:text-[16px] font-regular transform
                                         transition-all duration-300 ease-in-out hover:text-[#FF782D] cursor-pointer
                                         hover:pl-[10px] hover:underline
                                     "
-                                >Ứng dụng Di động</li>
+                                >
+                                    <a href="#">Ứng dụng Di động</a>
+                                </li>
                                 <li 
                                     className="
                                         text-[#555555] text-[10px] md:text-[12px] lg:text-[16px] font-regular transform
                                         transition-all duration-300 ease-in-out hover:text-[#FF782D] cursor-pointer
                                         hover:pl-[10px] hover:underline
                                     "
-                                >Tất cả chương trình</li>
+                                >
+                                    <a href="#">Tất cả chương trình</a>
+                                </li>
                             </ul>
                         </div>
                         <div className="w-full">
