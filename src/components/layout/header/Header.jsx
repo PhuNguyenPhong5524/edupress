@@ -55,7 +55,7 @@ const Header = () => {
                     {/* <!-- Logo --> */}
                         <a href="/index.html" className="md:leading-[20px] w-full flex md:w-auto md:flex-col justify-center items-center">
                             <div className="flex items-center gap-1 ">
-                                <img src="./images/logo.png" alt="EduPress Logo" className="md:w-[40px] md:h-[30px]" />
+                                <img src="./images/logo.png" alt="EduPress Logo" className="w-[30px] h-[20px] md:w-[40px] md:h-[30px]" />
                                 <p 
                                     className=" 
                                         font-bold md:text-[24px] lg:text-[28px]
