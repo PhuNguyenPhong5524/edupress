@@ -1,31 +1,14 @@
 'use client';
-import fetchApi from '../../api/fetchApi';
-import Banner from './Banner';
-import BoxShowCategory from './BoxShowCategory/BoxShowCategory';
-import './Home.css';
-import { useState, useEffect } from 'react';
 
+import Banner from '../../components/Home/Banner';
+import BoxShowCategory from '../../components//Home/BoxShowCategory/BoxShowCategory';
+import useFetchData from '../../api/useFetchData'
 
 
 
 const HomePage = () => {
     
-    const [categories, setCategories] = useState([]);
-
-    useEffect(() => {
-      let mounted = true;
-
-      fetchApi('categories')
-        .then((cats) => {
-          if (mounted) setCategories(cats);
-        })
-        .catch((err) => {
-          console.error('Fetch categories failed:', err);
-        });
-
-      return () => { mounted = false };
-    }, []);
-
+    const {data: categories} = useFetchData('categories');
 
     return (
         <div>

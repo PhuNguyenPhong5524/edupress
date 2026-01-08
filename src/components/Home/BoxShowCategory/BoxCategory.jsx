@@ -6,7 +6,6 @@ import { categoryIconMap } from "./category-icon-map";
 
 
 const BoxCateGory = ({categories}) => {
-    console.log(categories);
     return(
         <>
             {

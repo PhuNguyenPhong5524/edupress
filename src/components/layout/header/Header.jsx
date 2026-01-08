@@ -1,32 +1,17 @@
 'use client';
 
-import { useEffect, useState } from "react";
 import BagShoppingIcon from "../../icons/BagShoppingIcon";
 import BellIcon from "../../icons/BellIcon";
 import ChevronDown from "../../icons/ChevronDown";
 import SearchIcon from "../../icons/SearchIcon";
 import UserIcon from "../../icons/UserIcon";
-import fetchApi from "../../../api/fetchApi";
 import BarsIcon from "../../icons/BarsIcon";
+import useFetchData from "../../../api/useFetchData";
 
 const Header = () => {
 
-    const [categories, setCategories] = useState([]);
-
-    useEffect(() => {
-      let mounted = true;
-
-      fetchApi('categories')
-        .then((cats) => {
-          if (mounted) setCategories(cats);
-        })
-        .catch((err) => {
-          console.error('Fetch categories failed:', err);
-        });
-
-      return () => { mounted = false };
-    }, []);
-
+    const {data: categories} = useFetchData('categories');
+    
     return (
         <header 
             className="
